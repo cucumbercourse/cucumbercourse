@@ -29,6 +29,8 @@ public class StepDefinitions {
        
         WebDriver driver = new ChromeDriver(options);
         driver.get("http://127.0.0.1:8000");
+        WebElement BillAmountTextBox = driver.findElement(By.id("id_billamount"));
+        BillAmountTextBox.sendKeys("100");
 
     }
 
