@@ -21,7 +21,7 @@ public class StepDefinitions {
     public void anExampleScenario() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox");
-        options.addArguments("--user-data-dir alt");
+        //options.addArguments("--user-data-dir=alt");
         WebDriver driver = new ChromeDriver(options);
 
     }
