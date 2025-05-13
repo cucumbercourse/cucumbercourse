@@ -1,15 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: linkedinlearning.cucumbercourse.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.004 s <<< FAILURE! -- in linkedinlearning.cucumbercourse.RunCucumberTest
-An example.An example - The example -- Time elapsed: 0.871 s <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.020 s <<< FAILURE! -- in linkedinlearning.cucumbercourse.RunCucumberTest
+An example.An example - The example -- Time elapsed: 0.900 s <<< ERROR!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir 
 Host info: host: 'codespaces-5af4f6', ip: '127.0.0.1'
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-1027-azure', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--no-sandbox, --user-data-dir='usr/bin/alt'], binary: /usr/bin/google-chrome, extensions: []}}]}]
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--no-sandbox, --user-data-dir alt], binary: /usr/bin/google-chrome, extensions: []}}]}]
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
@@ -23,6 +23,6 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-	at linkedinlearning.cucumbercourse.StepDefinitions.anExampleScenario(StepDefinitions.java:33)
+	at linkedinlearning.cucumbercourse.StepDefinitions.anExampleScenario(StepDefinitions.java:25)
 	at ✽.an example scenario(classpath:linkedinlearning/cucumbercourse/example.feature:4)
 

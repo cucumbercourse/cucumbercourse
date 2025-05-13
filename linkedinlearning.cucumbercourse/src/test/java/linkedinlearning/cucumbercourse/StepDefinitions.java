@@ -19,19 +19,10 @@ public class StepDefinitions {
 
     @Given("an example scenario")
     public void anExampleScenario() {
-         ChromeOptions options = new ChromeOptions();
-         
-         System.out.println(options.toString());
-     
-
-        //options("--no-sandbox");
+        ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox");
-        options.addArguments("--user-data-dir='usr/bin/alt'");
-       //WebDriver driver = WebDriverManager.chromedriver().create();
-       
-
+        options.addArguments("--user-data-dir alt");
         WebDriver driver = new ChromeDriver(options);
-        driver = new ChromeDriver(options);
 
     }
 
