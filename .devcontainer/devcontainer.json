@@ -34,5 +34,5 @@
 			"label": "desktop"
 		}
 	},
-  "postCreateCommand": "chmod +x .devcontainer/install_chrome.sh && .devcontainer/install_chrome.sh"
+  "postCreateCommand": "chmod +x .devcontainer/install_chrome.sh && .devcontainer/install_chrome.sh && sudo apt install python3-django -y"
 }
