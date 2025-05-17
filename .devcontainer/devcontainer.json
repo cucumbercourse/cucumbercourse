@@ -21,7 +21,8 @@
 				"vscjava.vscode-java-test",
 				"vscjava.vscode-java-debug",
 				"GitHub.github-vscode-theme",
-				"cucumberopen.cucumber-official"
+				"cucumberopen.cucumber-official",
+				"alexkrechik.cucumberautocomplete"
 			]
 		}
 	},
