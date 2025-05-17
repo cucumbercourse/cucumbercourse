@@ -10,9 +10,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.chrome;
-
-
 
 public class StepDefinitions {
 
@@ -27,10 +24,10 @@ public class StepDefinitions {
         //options.addArguments("--headless");
         //options.addArguments("--user-data-dir=alt");
        
-        WebDriver driver = new ChromeDriver(options);
-        driver.get("http://127.0.0.1:8000");
-        WebElement BillAmountTextBox = driver.findElement(By.id("id_billamount"));
-        BillAmountTextBox.sendKeys("100");
+        //WebDriver driver = new ChromeDriver(options);
+        //driver.get("http://127.0.0.1:8000");
+        //WebElement BillAmountTextBox = driver.findElement(By.id("id_billamount"));
+        //BillAmountTextBox.sendKeys("100");
 
     }
 
