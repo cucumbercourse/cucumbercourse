@@ -9,3 +9,5 @@ Thumbs.db
 # Ignore dirs
 /target/
 /resources/*.png
+/target/
+linkedinlearning.cucumbercourse/target/
