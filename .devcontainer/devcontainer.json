@@ -1,32 +1,33 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/java:1-21",
-  "features": {
-	  "ghcr.io/devcontainers/features/java:1": {
-		"version": "21",
-		"installMaven": "true",
-		"mavenVersion": "3.9.9",
-		"installGradle": "false"
+	"image": "mcr.microsoft.com/devcontainers/java:1-21",
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "21",
+			"installMaven": "true",
+			"mavenVersion": "3.9.9",
+			"installGradle": "false"
 		},
-	"ghcr.io/devcontainers/features/python:1": {},  
-	"ghcr.io/devcontainers/features/desktop-lite:1": {}
-  },
- "customizations": {
-	"vscode": {
-		"settings": {
-			"java.jdt.ls.java.home": "/docker-java-home"
-		},
-		"extensions": [
-			"vscjava.vscode-java-pack",
-			"vscjava.vscode-maven",
-			"vscjava.vscode-java-test",
-			"vscjava.vscode-java-debug",
-			"GitHub.github-vscode-theme"
-		]
-	}
-},
-"containerUser": "vscode",
-"remoteUser": "vscode",
-  "forwardPorts": [
+		"ghcr.io/devcontainers/features/python:1": {},
+		"ghcr.io/devcontainers/features/desktop-lite:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"java.jdt.ls.java.home": "/docker-java-home"
+			},
+			"extensions": [
+				"vscjava.vscode-java-pack",
+				"vscjava.vscode-maven",
+				"vscjava.vscode-java-test",
+				"vscjava.vscode-java-debug",
+				"GitHub.github-vscode-theme",
+				"cucumberopen.cucumber-official"
+			]
+		}
+	},
+	"containerUser": "vscode",
+	"remoteUser": "vscode",
+	"forwardPorts": [
 		6080
 	],
 	"portsAttributes": {
@@ -34,5 +35,5 @@
 			"label": "desktop"
 		}
 	},
-  "postCreateCommand": "chmod +x .devcontainer/install_chrome.sh && .devcontainer/install_chrome.sh && sudo apt install python3-django -y"
+	"postCreateCommand": "chmod +x .devcontainer/install_chrome.sh && .devcontainer/install_chrome.sh && sudo apt install python3-django -y"
 }
