@@ -7,7 +7,6 @@ Thumbs.db
 *.deb
 
 # Ignore dirs
-/target/
+*/target/*
 /resources/*.png
-/target/
 linkedinlearning.cucumbercourse/target/
