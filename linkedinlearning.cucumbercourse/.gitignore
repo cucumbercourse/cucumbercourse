@@ -1,0 +1,13 @@
+# Ignore files
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.txt
+*.xml
+hs_err_pid*
+
+# Ignore dirs
+target/
