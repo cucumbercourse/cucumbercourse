@@ -6,6 +6,7 @@
 *.ear
 *.nar
 *.txt
+*.xml
 hs_err_pid*
 
 # Ignore dirs
