@@ -10,6 +10,6 @@
 hs_err_pid*
 
 # Ignore dirs
-*/target/**
+target/
 /resources/*.png
 linkedinlearning.cucumbercourse/target/
