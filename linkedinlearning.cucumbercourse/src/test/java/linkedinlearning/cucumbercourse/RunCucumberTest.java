@@ -15,7 +15,7 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 @IncludeEngines("cucumber")
 @SelectPackages("linkedinlearning.cucumbercourse")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "linkedinlearning.cucumbercourse")
+@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "linkedinlearning.cucumbercourse, hooks")
 // filter by tag @SmokeTest
 // @IncludeTags("SmokeTest")
 // filter by tag @SmokeTest OR @NightlyBuildTest
