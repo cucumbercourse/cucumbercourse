@@ -89,17 +89,22 @@ public class ScenarioOutlineSteps {
     System.out.println("CALLING PLAYWRIGHT");
     String Response = "";
     try (Playwright playwright = Playwright.create()) {
+      //launch browser with the right settings
       LaunchOptions options = new LaunchOptions();
       options.headless = false;
       options.chromiumSandbox = false;
       options.setSlowMo(1000);
       Browser browser = playwright.chromium().launch(options);
       Page page = browser.newPage();
+      //navigate to the Python Djanfo website
       page.navigate("http://127.0.0.1:8000");
+      //set values
       page.fill("#id_billamount", Integer.toString(InitialBillAmount));
       page.fill("#id_taxrate", Double.toString(TaxRate));
+      //click button
       page.waitForSelector("#mybutton");
       page.click("#mybutton");
+      //read and return response
       Response = page.textContent("h3:first-of-type");
       browser.close();
       return Response;
