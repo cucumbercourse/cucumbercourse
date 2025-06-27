@@ -1,0 +1,15 @@
+# Ignore files
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.txt
+*.xml
+hs_err_pid*
+
+# Ignore dirs
+target/
+restaurant_calculator/bill_calculator/__pycache__/
+restaurant_calculator/restaurant_calculator/__pycache__/
