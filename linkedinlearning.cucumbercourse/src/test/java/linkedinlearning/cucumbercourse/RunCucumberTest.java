@@ -41,5 +41,11 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 // mvn test -Dcucumber.filter.tags="@SmokeTest and @RegularTest"
 // run only one test
 // mvn test -Dcucumber.filter.tags="@NightlyBuildTest and @RegularTest"
+// uncomment next two lines to run reports
+// @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, 
+// value = "junit:target/cucumber-reports/Cucumber.xml, json:target/cucumber-reports/Cucumber.json, html:target/cucumber-reports/Cucumber.html, timeline:target/cucumber-reports/CucumberTimeline")
+// uncomment next two lines to test with dry run = true
+// @ConfigurationParameter( key = Constants.EXECUTION_DRY_RUN_PROPERTY_NAME,
+// value = "true")
 public class RunCucumberTest {
 }
